@@ -1,19 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:wordcounter/pages/home.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MaterialApp(
+  theme: ThemeData(
+    primaryColor: Colors.blue,
+  ),
+  home: Home(),
+));
 
-class MyApp extends StatelessWidget{
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      theme: ThemeData(primaryColor:Colors.blueGrey),
-      home: Scaffold(
-      appBar: AppBar(title: Text('Word Counter'),),
-    ),
-    );
-  }
-  
-}
+
 
 
 
